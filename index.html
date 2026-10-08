@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ludmyla Cordeiro | Engenharia de Dados e IA</title>
+  <meta name="description" content="Portfólio de Ludmyla Cordeiro: pipelines de dados no Azure e Databricks, RAG e agentes de IA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__brand" href="#inicio">LC</a>
+    <nav class="nav__links" aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <p class="hero__hello">Oi, eu sou a</p>
+        <h1 class="hero__name">
+          <span class="line"><span>Ludmyla</span></span>
+          <span class="line"><span>Cordeiro</span></span>
+        </h1>
+        <p class="hero__role">
+          Eu trabalho com <strong id="typed" aria-live="polite"></strong><span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <ol class="pipeline" aria-label="Fluxo de dados: fonte, transformação, qualidade, insight">
+          <li class="stage">Fonte</li>
+          <li class="stage">Transformação</li>
+          <li class="stage">Qualidade</li>
+          <li class="stage">Insight</li>
+          <span class="packet" style="--delay:0s"></span>
+          <span class="packet" style="--delay:1.3s"></span>
+          <span class="packet" style="--delay:2.6s"></span>
+        </ol>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+          <a class="btn" href="#contato">Falar comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container about">
+        <div class="reveal">
+          <h2>Dados confiáveis são a base de qualquer IA útil.</h2>
+          <p>Oi! Sou a Ludmyla, <strong>Meio Oficial em Soluções Digitais na Bosch</strong>, onde desenvolvo e mantenho pipelines de dados escaláveis no ecossistema Azure.</p>
+          <p>Minha trajetória começou como aprendiz, criando aplicações web em React e apresentações executivas. Hoje uso o mesmo olhar de comunicação para construir <strong>pipelines ETL/ELT, plataformas RAG e fluxos com agentes (LangGraph)</strong> nas rotinas corporativas.</p>
+          <p>Me importo com o ciclo completo: <strong>qualidade de dados, orquestração, versionamento e CI/CD</strong>, e não só com o modelo. Quando a IA precisa de uma informação que não tem, ela pergunta em vez de inventar.</p>
+        </div>
+
+        <aside class="profile reveal">
+          <div class="avatar">
+            <div class="avatar__inner">LC<img src="img/foto.png" alt="Foto de Ludmyla Cordeiro" onerror="this.remove()"></div>
+          </div>
+          <dl class="facts">
+            <div><dt>Cargo</dt><dd>Técnica em Soluções Digitais - Bosch</dd></div>
+            <div><dt>Base</dt><dd>Campinas, SP</dd></div>
+            <div><dt>Foco</dt><dd>Dados, IA, RAG e agentes</dd></div>
+            <div><dt>Idiomas</dt><dd>Português e inglês (B2)</dd></div>
+            <div class="wide"><dt>Graduação</dt><dd>Ciência da Computação na UNIP (cursando)</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section">
+      <div class="container">
+        <h2 class="reveal">Experiência</h2>
+        <div class="timeline">
+          <article class="job reveal">
+            <h3>Soluções Digitais (Foco am dados e IA)<span>Bosch · Jan 2025 – atual</span></h3>
+            <ul>
+              <li>Desenvolvo e mantenho pipelines de dados escaláveis (ETL/ELT) com Python, SQL, Databricks e Azure Data Factory.</li>
+              <li>Apoio a arquitetura de dados no Microsoft Fabric (Lakehouse) e aplico rotinas de qualidade para monitorar a consistência.</li>
+              <li>Integro ferramentas de IA e fluxos agentic (LangGraph, Azure OpenAI) para automatizar processos analíticos.</li>
+              <li>Documento processos, defino regras de negócio com outras equipes e versiono o código com Git e Azure DevOps.</li>
+            </ul>
+          </article>
+          <article class="job reveal">
+            <h3>Aprendiz em Soluções Digitais <span>Bosch · Jun 2023 – Dez 2024</span></h3>
+            <ul>
+              <li>Participei do desenvolvimento de aplicações web com React e da padronização visual de sistemas internos.</li>
+              <li>Produzi apresentações executivas e documentação funcional com storytelling visual.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2 class="reveal">Projetos</h2>
+        <div class="projects">
+          <article class="project reveal">
+            <h3>Pipeline analítico em Databricks</h3>
+            <p>Pipeline automatizado que processa dados de previsão de fornecedores. Escrito em PySpark no Databricks e integrado ao Azure Data Factory, com Blob Storage e Logic Apps para disparar notificações semanais.</p>
+            <ul class="tags"><li>PySpark</li><li>Databricks</li><li>Data Factory</li><li>Logic Apps</li></ul>
+          </article>
+          <article class="project reveal">
+            <h3>TRAI: plataforma RAG de classificação fiscal</h3>
+            <p>Pipelines RAG sobre bases corporativas para classificar produtos por NCM. O modelo não assume características técnicas do produto: ele pede a informação ao usuário, o que reduz alucinações e protege a qualidade dos dados.</p>
+            <ul class="tags"><li>RAG</li><li>LLMs</li><li>Azure OpenAI</li><li>Python</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="reveal">Skills</h2>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Plataformas e cloud</h3>
+            <ul class="chips"><li>Azure</li><li>Databricks</li><li>Microsoft Fabric</li><li>Data Factory</li><li>Logic Apps</li><li>Blob Storage</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Dados e engenharia</h3>
+            <ul class="chips"><li>Python</li><li>SQL</li><li>PySpark</li><li>ETL/ELT</li><li>Data Lakes</li><li>Modelagem</li><li>Qualidade de dados</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>IA e ciência de dados</h3>
+            <ul class="chips"><li>LLMs</li><li>LangChain</li><li>LangGraph</li><li>RAG</li><li>Pandas</li><li>Scikit-Learn</li><li>EDA</li><li>Power BI</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>DevOps</h3>
+            <ul class="chips"><li>Git</li><li>Azure DevOps</li><li>GitHub Actions</li><li>CI/CD</li><li>APIs REST</li><li>Code review</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICADOS: copie um <article class="cert"> para cada certificado novo -->
+    <section id="certificados" class="section">
+      <div class="container">
+        <h2 class="reveal">Certificados</h2>
+        <div class="certs">
+          <article class="cert reveal">
+            <span class="cert__issuer">SENAI</span>
+            <h3>Privacidade e Proteção de Dados</h3>
+            <span class="cert__date">2023 · 4h</span>
+            <a href="https://www.sp.senai.br/consulta-certificado?qrcode=00024970/7425573" target="_blank" rel="noopener">Ver credencial</a>
+          </article>
+          <article class="cert reveal">
+            <span class="cert__issuer">FIAP</span>
+            <h3>Inteligência Artificial e Computacional</h3>
+            <span class="cert__date">2025 · 80h</span>
+            <a href="https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=5436eebedf754d49c35c77d7e5e6cec5&action=view" target="_blank" rel="noopener">Ver credencial</a>
+          </article>
+          <article class="cert reveal">
+            <span class="cert__issuer">Alura</span>
+            <h3>Data Science: analisando e prevendo séries temporais</h3>
+            <span class="cert__date">2025 · 10h</span>
+            <a href="https://cursos.alura.com.br/formalCertificate/c6a4c30c-6ba7-4ab5-a172-8a9a734139ff" target="_blank" rel="noopener">Ver credencial</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="section">
+      <div class="container">
+        <h2 class="reveal">Formação</h2>
+        <ul class="edu">
+          <li class="reveal"><strong>Bacharelado em Ciência da Computação</strong> UNIP Campinas · 2024 – atual</li>
+          <li class="reveal"><strong>Técnico em Desenvolvimento de Sistemas</strong> SENAI Campinas · 2023 – 2024</li>
+          <li class="reveal"><strong>Ensino Médio integrado a Informática</strong> CEMEP Paulínia · 2020 – 2022</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contact">
+      <div class="container">
+        <h2 class="reveal">Vamos conversar?</h2>
+        <div class="contact__links reveal">
+          <a class="btn btn--primary" href="mailto:ludmylacmc@gmail.com">ludmylacmc@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/ludmyla-muniz/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ludmyla Coimbra Muniz Cordeiro</p>
+  </footer>
+</body>
+</html>
